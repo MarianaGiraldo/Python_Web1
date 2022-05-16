@@ -1,3 +1,33 @@
+/*---------------------------------------
+  CUSTOM PROPERTIES ( VARIABLES )             
+-----------------------------------------*/
+:root {
+    --white-color:                  #ffffff;
+    --primary-color:                #0dcaf0;
+    --secondary-color:              #0d6efd;
+    --section-bg-color:             #f0f8ff;
+    --dark-color:                   #000000;
+    --navbar-bg-color:              #273053;
+    --p-color:                      #717275;
+    --highlight-icon-color:         #ff0100;
+  
+    --body-font-family:             'DM Sans', sans-serif;
+  
+    --h1-font-size:                 62px;
+    --h2-font-size:                 48px;
+    --h3-font-size:                 36px;
+    --h4-font-size:                 32px;
+    --h5-font-size:                 24px;
+    --h6-font-size:                 22px;
+    --p-font-size:                  18px;
+    --menu-font-size:               16px;
+    --copyright-text-font-size:     16px;
+  
+    --font-weight-normal:           400;
+    --font-weight-medium:           500;
+    --font-weight-bold:             700;
+  }
+
 #mainNav {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     background-color: #fff;
@@ -174,3 +204,46 @@ header.masthead .h1 {
 #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
     opacity: 1;
 }
+
+
+/*---------------------------------------
+  CUSTOM FORM               
+-----------------------------------------*/
+.custom-form .form-control {
+    background: var(--section-bg-color);
+    border: 0;
+    margin-bottom: 24px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+  
+  .custom-form button[type="submit"] {
+    background: var(--primary-color);
+    border-radius: 100px;
+    color: var(--white-color);
+    font-weight: var(--font-weight-bold);
+    transition: all 0.3s;
+    margin-bottom: 0;
+  }
+  
+  .custom-form button[type="submit"]:hover,
+  .custom-form button[type="submit"]:focus {
+    background: var(--navbar-bg-color);
+  }
+  
+
+  .contact-form {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  .contact-form h2 {
+    background: var(--navbar-bg-color);
+    color: var(--white-color);
+    padding: 30px 50px;
+  }
+  
+  .contact-form .row {
+    padding: 50px;
+  }
