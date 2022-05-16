@@ -81,6 +81,7 @@ body {
 }
 
 .form-content input[type="text"],
+.form-content input[type="tel"],
 .form-content input[type="password"],
 .form-content input[type="email"],
 .form-content select {

@@ -15,9 +15,21 @@ def mision():
 def contactus(num):
     return f'Contact {num}'
 
+@app.route('/routes')
+def routes():
+    return render_template('show_routes.html')
+
+@app.route('/all-tickets')
+def all_tickets():
+    return render_template('show_tickets.html')
+
+@app.route('/buy-tickets')
+def buy_tickets():
+    return render_template('buy_tickets.html')
+
 @app.route('/register')
-def form():
-    return render_template('form.html')
+def register():
+    return render_template('register_form.html')
 
 @app.route('/registerUser', methods = ['POST'])
 def formPost():
