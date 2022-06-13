@@ -1,4 +1,4 @@
-INSERT INTO `buses`(`plate`, `type`, `capacity`, `company`) VALUES (
+INSERT INTO `buses`(`plate`, `type`, `capacity`, `company`) VALUES 
 	('QHH-934', '2G', 60, 'Expreso Bolivariano'),
     ('GDD-436', '2G Gold', 80, 'Expreso Bolivariano'),
     ('TRY-755', 'DUO Bus', 60, 'Expreso Palmira'),
@@ -9,8 +9,8 @@ INSERT INTO `buses`(`plate`, `type`, `capacity`, `company`) VALUES (
     ('HTN-725', 'MAXXI', 50, 'Expreso Palmira'),
     ('CZM-639', 'Super Estelar', 60, 'Expreso Bolivariano'),
     ('DSK-318', '2G', 60, 'Rapido Tolima')
-);
-INSERT INTO `routes`(`origin`, `destination`) VALUES (
+;
+INSERT INTO `routes`(`origin`, `destination`) VALUES 
 	('Bogota', 'Manizales'),
     ('Manizales', 'Bogota'),
     ('Cali', 'Bogota'),
@@ -20,9 +20,9 @@ INSERT INTO `routes`(`origin`, `destination`) VALUES (
     ('Fusa', 'Bogota'),
     ('Bogota', 'Fusa'),
     ('Melgar', 'Bogota'),
-    ('Bogota', 'Melgar'),
-);
-INSERT INTO `route_bus`(`route_id`, `bus_id`) VALUES (
+    ('Bogota', 'Melgar')
+;
+INSERT INTO `route_bus`(`route_id`, `bus_id`) VALUES 
 	(1, 1),
 	(1, 2),
     (1, 3),
@@ -122,5 +122,4 @@ INSERT INTO `route_bus`(`route_id`, `bus_id`) VALUES (
     (10, 7),
 	(10, 8),
     (10, 9),
-	(10, 10)
-);
+	(10, 10);
